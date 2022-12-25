@@ -8,7 +8,7 @@ body {
   font-family: "arcade", sans-serif;
   padding: 0;
   margin: 0;
-  background: url('../img/grid.png') repeat;
+  background: url('img/grid.png') repeat;
   display: flex;
   flex-direction: column;
 }
