@@ -36,9 +36,9 @@ const ball_size = new Array(10, 10);
 const initial_ball_speed = 3;
 const ball_speed_increment = 0.3;
 
-const randomness = 15;
-const vertical_trajectory_block = 35;
-const horizontal_trajectory_block = 20;
+const randomness = 25;
+const vertical_trajectory_block = 25;
+const horizontal_trajectory_block = 10;
 const initial_trajectory = horizontal_trajectory_block;
 
 let ball_pos = new Array((width/2)-(ball_size[0]/2), (height/2)-(ball_size[1]/2));
