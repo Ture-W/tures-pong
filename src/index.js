@@ -12,8 +12,8 @@ const black_color = window.getComputedStyle(document.documentElement).getPropert
 const white_color = window.getComputedStyle(document.documentElement).getPropertyValue('--white-color');
 
 let muted = false;
-const tap_audio = require('/audio/tap.wav');
-const gameover_audio = new Audio(require('/audio/gameover.wav'));
+const tap_audio = '/audio/tap.wav';
+const gameover_audio = new Audio('/audio/gameover.wav');
 gameover_audio.volume = 0.65;
 gameover_audio.playbackRate = 1.25;
 gameover_audio.addEventListener('ended', () => {
