@@ -12,8 +12,8 @@ const black_color = window.getComputedStyle(document.documentElement).getPropert
 const white_color = window.getComputedStyle(document.documentElement).getPropertyValue('--white-color');
 
 let muted = false;
-const tap_audio = '../audio/tap.wav';
-const gameover_audio = new Audio('../audio/gameover.wav');
+const tap_audio = require('/audio/tap.wav');
+const gameover_audio = new Audio(require('/audio/gameover.wav'));
 gameover_audio.volume = 0.65;
 gameover_audio.playbackRate = 1.25;
 gameover_audio.addEventListener('ended', () => {
@@ -304,6 +304,7 @@ async function idleGameLoop() {
       ball_pos = new Array((width/2)-(ball_size[0]/2), (height/2)-(ball_size[1]/2));
       ball_trajectory = initial_trajectory;
       touch_paddle = 0;
+      touch_side = -1;
     }
 
     ball_pos[0] += idle_ball_speed * Math.cos(ball_trajectory*(Math.PI / 180));
