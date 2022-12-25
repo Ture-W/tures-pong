@@ -2,6 +2,7 @@
   --black-color: #0a0a0a;
   --white-color: #e0e0e0;
   --gray-color: #696969;
+  --gold-color: #d4af37;
 }
 
 body {
@@ -96,7 +97,6 @@ body {
 }
 
 #score_num {
-  color: var(--white-color);
   text-align: center;
   font-size: 48px;
   margin-top: 0;

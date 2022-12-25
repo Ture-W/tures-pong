@@ -10,6 +10,7 @@ const max_fps = 120;
 
 const black_color = window.getComputedStyle(document.documentElement).getPropertyValue('--black-color');
 const white_color = window.getComputedStyle(document.documentElement).getPropertyValue('--white-color');
+const gold_color = window.getComputedStyle(document.documentElement).getPropertyValue('--gold-color');
 
 let muted = false;
 const tap_audio = 'audio/tap.wav';
@@ -352,6 +353,7 @@ function gameOver() {
   const score_num = document.createElement("h1");
   score_num.id = "score_num";
   score_num.innerHTML = score;
+  if (score >= 50) { score_num.style.color = gold_color } else { score_num.style.color = white_color }
   const start_button = document.createElement("div");
   start_button.id = "retry-button";
   start_button.innerHTML = "PLAY";
